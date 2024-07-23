@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converter &amp; BMI Calculator</title> 
+  <link rel="stylesheet" href="styles.css">
+</head> 
+<body> 
+  <div class="container"> 
+    <h1>Weight Converter &amp; BMI Calculator</h1> 
+    <div class="health-tips-container"> 
+      <h2>Healthy Living Tips</h2> 
+      <div class="health-tip"> 
+        <img src="image1.jpg" alt="Healthy Eating"> 
+        <p>Eat a balanced diet rich in fruits, vegetables, whole grains, and lean proteins.</p> 
+      </div> 
+      <div class="health-tip"> 
+        <img src="image2.jpg" alt="Stay Hydrated"> 
+        <p>Drink plenty of water throughout the day to stay hydrated and support overall health.</p> 
+      </div> 
+      <div class="health-tip"> 
+        <img src="image3.jpg" alt="Regular Exercise"> 
+        <p>Incorporate regular exercise into your routine to improve fitness and maintain a healthy weight.</p> 
+      </div> 
+      <div class="health-tip"> 
+        <img src="image4.jpg" alt="Get Enough Sleep"> 
+        <p>Ensure you get enough quality sleep each night to support your overall well-being.</p> 
+      </div> 
+    </div> 
+    <div> 
+      <label for="kgInput">Input the weight in KG:</label> 
+      <input type="number" id="kgInput" placeholder="Enter weight in kilograms"> 
+      <button onclick="convertWeight()">Convert</button> 
+      <div class="result-container"> 
+        <h3>Converted Weights:</h3> 
+        <div> 
+          <label for="gramOutput">Gram:</label> 
+          <textarea id="gramOutput" rows="5" readonly></textarea> 
+        </div> 
+        <div> 
+          <label for="poundOutput">Pound:</label> 
+          <textarea id="poundOutput" rows="5" readonly></textarea> 
+        </div> 
+        <div> 
+          <label for="ounceOutput">Ounce:</label> 
+          <textarea id="ounceOutput" rows="5" readonly></textarea> 
+        </div> 
+      </div> 
+    </div> 
+    <div class="bmi-container"> 
+      <h3>BMI Calculator:</h3> 
+      <label for="heightInput">Enter your height in centimeters:</label> 
+      <input type="number" id="heightInput" placeholder="Enter height in centimeters"> 
+      <button onclick="calculateBMI()">Calculate BMI</button> 
+      <div> 
+        <label for="bmiOutput">Your BMI:</label> 
+        <textarea id="bmiOutput" rows="2" readonly></textarea> 
+      </div> 
+    </div> 
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>
